@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import '../App.css';
 
+interface Props {
+  numOne:string,
+  numTwo:string,
+  mathOp: string
+}
+
 function Display() {
 
   
