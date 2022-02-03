@@ -1,22 +1,36 @@
 import React, { Component } from 'react';
-
+import Display from './Display';
+import '../App.css';
 export default class Numbers extends Component {
     state = {
-       firstNum: 0,
-       secondNum: 0,
+        numOne: "",
+        numTwo: "",
+        mathOp: ""
     }
+    
   render() {
     return <div className='numbers'>
-            <div className="one">1</div>
-            <div className="two">2</div>
-            <div className="three">3</div>
-            <div className="four">4</div>
-            <div className="five">5</div>
-            <div className="six">6</div>
-            <div className="seven">7</div>
-            <div className="eight">8</div>
-            <div className="nine">9</div>
-            <div className="zero">0</div>
+            <Display />
+            <div className="num-containers">
+
+                <input type="button" className="num one" value={1}/>
+                <input type="button" className="num two" value={2}/>
+                <input type="button" className="num three" value={3}/>
+                <input type="button" className="num four" value={4}/>
+                <input type="button" className="num five" value={5}/>
+                <input type="button" className="num six" value={6}/>
+                <input type="button" className="num seven" value={7}/>
+                <input type="button" className="num eight" value={8}/>
+                <input type="button" className="num nine" value={9}/>
+                <input type="button" className="num zero" value={0}/>
+
+            </div>
+            <div className="math-op">
+                <input type="button" className='math plus' value={"+"}/>
+                <input type="button" className='math plus' value={"-"}/>
+                <input type="button" className='math plus' value={"x"}/>
+                <input type="button" className='math plus' value={"/"}/>
+            </div>
     </div>;
   }
 }

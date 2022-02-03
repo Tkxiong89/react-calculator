@@ -56,6 +56,11 @@ table {
 	border-radius: 2px;
 	border: 1px solid lightblue;
 	box-shadow: 4px 4px 5px 0 rgba(2, 3, 36, 0.2);
+	background-color: firebrick;
+}
+
+.numbers {
+	position: relative;
 }
 
 .display {
@@ -67,6 +72,40 @@ table {
 	margin: auto;
 	margin-top: 20px;
 	border-radius: 3px;
-	background-color: rgb(85, 18, 18);
+	background-color: rgb(3, 3, 3);
 	color: rgb(255, 251, 0);
+}
+
+/* number component */
+
+.num-containers {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100px;
+	margin-top: 20px;
+	margin-left: 35px;
+}
+
+.num {
+	background-color: lightgrey;
+	padding: 5px;
+	margin: 1px;
+	width: 30px;
+	height: 30px;
+}
+
+.math-op {
+	display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 40px;
+    top: 120px;
+}
+
+.math {
+	background-color: lightgrey;
+	padding: 5px;
+	margin: 1px;
+	width: 30px;
+	height: 30px;
 }
