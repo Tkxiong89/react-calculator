@@ -57,3 +57,16 @@ table {
 	border: 1px solid lightblue;
 	box-shadow: 4px 4px 5px 0 rgba(2, 3, 36, 0.2);
 }
+
+.display {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 70%;
+	height: 100px;
+	margin: auto;
+	margin-top: 20px;
+	border-radius: 3px;
+	background-color: rgb(85, 18, 18);
+	color: rgb(255, 251, 0);
+}
