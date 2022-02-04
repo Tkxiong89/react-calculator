@@ -109,3 +109,19 @@ table {
 	width: 30px;
 	height: 30px;
 }
+
+
+.clear-btn {
+	display: flex;
+	justify-content: flex-start;
+	width: 50px;
+}
+
+.clear {
+	position: absolute;
+	background-color: lightgrey;
+	padding: 5px;
+	margin-left: 35px;
+	width: 50px;
+	height: 30px;
+}

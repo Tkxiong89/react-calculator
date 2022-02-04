@@ -15,9 +15,9 @@ export default class Numbers extends Component {
 
   handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>): void => {
     if (!this.state.mathOp) {
-      this.setState({ numOne: e.currentTarget.textContent });
+      this.setState({ numOne: this.state.numOne + e.currentTarget.textContent });
     } else {
-      this.setState({ numTwo: e.currentTarget.textContent })
+      this.setState({ numTwo: this.state.numTwo + e.currentTarget.textContent })
     }
 
   };
@@ -63,8 +63,8 @@ export default class Numbers extends Component {
         <button className='math plus' value={"/"} onClick={(e) => this.mathOpClicker(e)}>/</button>
         <button className='math equal' value={"="} onClick={this.equalClick}>=</button>
       </div>
-      <div>
-        <button className="math clear" onClick={this.clearDisplay}>Clear</button>
+      <div className='clear-btn'>
+        <button className="clear" onClick={this.clearDisplay}>Clear</button>
       </div>
     </div>;
   }
